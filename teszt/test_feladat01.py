@@ -17,7 +17,7 @@ class TestNagyobb(TestCase):
         elvart = 5
         self.assertEqual(elvart, aktualis, "nagyobb(3,5) visszatérési értéke nem 5")
 
-    def egyenloek(self):
+    def test_egyenloek(self):
         aktualis = feladatok.nagyobb(5,5)
         elvart = 5
         self.assertEqual(elvart, aktualis, "nagyobb(5,5) visszatérési értéke nem 5")
