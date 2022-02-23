@@ -11,7 +11,7 @@ class TestKor(TestCase):
         aktualis_terulet = feladatok.kor_terulet(5.3)
         elvart_terulet = 88.247337639
         kulonbseg = abs(elvart_terulet-aktualis_terulet)
-        if (kulonbseg > 0.00001):
+        if (kulonbseg > 0.001):
                 self.assertTrue(False,"A kör területét legalább négy tizedes jegy pontossággal kell meghatározza! A képletbe ne használjon Ön által beírt konstans számot")
 
     def test_teglalap_nincs1(self):
